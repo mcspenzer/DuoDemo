@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name"
+        android:id="@+id/main_toolbar"></android.support.v7.widget.Toolbar>
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:content="@layout/layout_content"
+        android:id="@+id/main_duoDrawerLayout">
+
+        <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/main_duoDrawerMenuView"
+            android:tag="menu"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        </nl.psdcompany.duonavigationdrawer.views.DuoMenuView>
+
+    </nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>
+
+</android.support.constraint.ConstraintLayout>
